@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main()
+{
+    printf("===== Linux File Access Permissions =====\n\n");
+
+    printf("Permission Symbols:\n");
+    printf("r = Read Permission    (4)\n");
+    printf("w = Write Permission   (2)\n");
+    printf("x = Execute Permission (1)\n\n");
+
+    printf("User Categories:\n");
+    printf("u = Owner/User\n");
+    printf("g = Group\n");
+    printf("o = Others\n\n");
+
+    printf("Permission Examples:\n");
+
+    printf("777 = rwxrwxrwx (Full permissions to all)\n");
+    printf("755 = rwxr-xr-x (Owner: rwx, Group: r-x, Others: r-x)\n");
+    printf("744 = rwxr--r-- (Owner: rwx, Group: r--, Others: r--)\n");
+    printf("700 = rwx------ (Only owner has access)\n");
+    printf("666 = rw-rw-rw- (Read and Write for all)\n");
+    printf("644 = rw-r--r-- (Owner can read/write, others read only)\n\n");
+
+    printf("Common Linux Commands:\n");
+    printf("chmod 755 file.txt\n");
+    printf("chmod 644 file.txt\n");
+    printf("ls -l file.txt\n");
+
+    return 0;
+}
